@@ -30,6 +30,22 @@ const recipes = [
     description: "Fish curry is a flavorful dish that can vary widely depending on the region and style of cooking. It's popular in many coastal regions around the world, including India, Southeast Asia, and the Caribbean.",
     image:'https://static.toiimg.com/thumb/58985156.cms?imgsize=319624&width=800&height=800',
     ingredients:'Fish Pieces, Lemon juice, salt, turmeric, chili powder, Onions, Garlic, Ginger,Garam Masala, Curry Leaves and Mustard Seeds '
+  },
+  {
+    id:3,
+    author: "James",
+    name: "Vegetable Stir-Fry",
+    description: "A versatile and colorful dish that's quick to make and can be customized with your favorite vegetables. It's perfect for a healthy and delicious meal.",
+    image:'https://www.budgetbytes.com/wp-content/uploads/2022/03/Easy-Vegetable-Stir-Fry-close.jpg',
+    ingredients:'Vegetables,Oils,Sauces, garlic and ginger '
+  },
+  {
+    id:3,
+    author: "Alan",
+    name: "Palak Paneer",
+    description: "A popular and nutritious Indian dish made with spinach and paneer (Indian cottage cheese). It's a flavorful and creamy curry that's perfect with naan, roti, or rice.",
+    image:'https://healthynibblesandbits.com/wp-content/uploads/2020/01/Saag-Paneer-FF.jpg',
+    ingredients:'Paneer, spinach, onion, tomato, garlic, turmeric powder, coriander powder, Salt'
   }
 ];
 
