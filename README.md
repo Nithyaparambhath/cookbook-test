@@ -1,3 +1,19 @@
+# Application Overview 
+
+This is Recipe Book Application using React JS. It includes all recipes are listed on left sidebar and detailes are in right side. when click a each recipe on leftside to show the details of recipe on right side. then additionally include search box on leftside. we can search recipe by name then you will get perticular recipe.
+
+# Add additional libraries
+
+I have added additional libraries so please run
+### npm install
+
+In the project directory, you can run:
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
