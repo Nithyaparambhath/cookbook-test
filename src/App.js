@@ -55,16 +55,30 @@ function App() {
   const onClickRecipe = (recipe)=>{
     setRecipe(recipe)
   }
+
+  const [searchQuery, setSearchQuery] = useState('');
+    const handleSearchChange = (event) => {
+        setSearchQuery(event.target.value);
+      };
+      // Filter recipes based on search query
+  const filteredRecipes = recipes.filter((recipe) =>
+    recipe.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+
   return <div className="App">
-    <Header  setRecipe={setRecipe}   />
+    <Header recipes={recipes}  setRecipe={setRecipe}   />
     <div>
 
             <Row>
               <Col style={{height:'100vh'}} className="bg-dark" sm={12} md={3}>
-                <RecipeList recipes={recipes} onClickRecipe={onClickRecipe}  />
+                <div className="m-3">
+                    <input className='form-control'  type="text" placeholder='Search Recipe Name' value={searchQuery} onChange={handleSearchChange} />
+                </div>
+                <RecipeList recipes={filteredRecipes} onClickRecipe={onClickRecipe}  />
               </Col>
               <Col sm={12} md={9}>
-              {recipe ? <RecipeDetails recipe={recipe} /> : 
+              {recipe ? <RecipeDetails recipe={recipe}  /> : 
 
                   <div className="mt-5 ms-5 text-center">
                     <h1 style={{fontWeight:'800'}}>Welcome to Recipe Book</h1>
